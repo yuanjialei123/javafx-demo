@@ -1,0 +1,29 @@
+.main-pane {
+    -fx-background-color: #ffffff; /* 白色背景 */
+    -fx-border-color: #2ecc71; /* 绿色边框 */
+    -fx-border-width: 2px; /* 边框宽度 */
+}
+
+.custom-button {
+    -fx-background-color: #2ecc71; /* 绿色按钮 */
+    -fx-text-fill: #ffffff; /* 白色文字 */
+}
+
+.custom-textfield {
+    -fx-background-color: #ecf0f1; /* 淡灰色文本框 */
+    -fx-text-fill: #2c3e50; /* 深蓝色文字 */
+}
+
+
+.custom-textfield {
+    -fx-background-color: #ecf0f1; /* 淡灰色文本框 */
+    -fx-text-fill: #2c3e50; /* 深蓝色文字 */
+    -fx-border-color: #2ecc71; /* 绿色边框 */
+    -fx-border-width: 1px; /* 边框宽度 */
+    -fx-padding: 5px; /* 左边留白 */
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%); /* 提示文本颜色 */
+    -jfx-unfocus-color: transparent; /* 非焦点状态下的下划线颜色 */
+    -jfx-focus-color: transparent; /* 焦点状态下的下划线颜色 */
+    -jfx-highlight-fill: transparent; /* 高亮颜色 */
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2; /* 设置背景 */
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane stylesheets="@/style/styles.css" prefHeight="250.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdemo.fx.controller.FileUrlSettingController" styleClass="main-pane">
+    <children>
+        <HBox layoutX="510.0" layoutY="10.0" spacing="10" alignment="TOP_RIGHT">
+            <!-- 添加最小化按钮 -->
+            <JFXButton fx:id="minimizeButton" onAction="#minimize" text="_" styleClass="custom-button" />
+            <!-- 添加关闭按钮 -->
+            <JFXButton fx:id="closeButton" onAction="#close" text="X" styleClass="custom-button" />
+        </HBox>
+        <VBox layoutX="50.0" layoutY="80.0" spacing="10">
+            <HBox spacing="10" alignment="CENTER">
+                <Text text="请选择路径：" />
+                <JFXTextField fx:id="filePathTextField" prefHeight="25.0" prefWidth="400.0" styleClass="custom-textfield" promptText="路径将会在这里展示" />
+            </HBox>
+            <HBox spacing="10" alignment="CENTER">
+                <JFXButton fx:id="startButton" onAction="#clickStart" styleClass="custom-button" text="请选择文件" />
+                <JFXButton fx:id="saveButton" styleClass="custom-button" text="保存" />
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
+
